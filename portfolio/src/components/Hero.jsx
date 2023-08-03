@@ -4,7 +4,7 @@ import avatar from "../assets/avatar.png";
 
 const Hero = () => {
   return (
-    <div className="py-10 flex flex-col md:flex-row items-center justify-center w-[90%]">
+    <div className="py-10 flex flex-col md:flex-row items-center justify-center w-[90%] mb-20">
       <div className="bg-[url(./assets/avatar.png)] h-52 w-52 bg-cover bg-center rounded-full mb-4"></div>
       <div className="flex-col flex items-center justify-center">
         <h1 className="text-3xl font-bold mb-3">Jakub Prus</h1>
