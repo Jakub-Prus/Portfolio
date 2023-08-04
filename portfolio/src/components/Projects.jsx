@@ -18,6 +18,7 @@ const Projects = () => {
             technologies={project.technologies}
             link={project.link}
             github={project.github}
+            madeAt={project.madeAt}
           />
         ))}
       </div>

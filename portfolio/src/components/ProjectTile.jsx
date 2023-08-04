@@ -12,31 +12,35 @@ const ProjectTile = ({
   github,
 }) => {
   return (
-    <div className="w-full border-[1px] border-gray-300 rounded-2xl">
+    <div className="w-full border-[1px] border-gray-300 rounded-2xl mb-8">
       <div className="w-full p-4">
         <div className="flex flex-row mb-4 justify-between">
           <img src={`assets/projects/${imgName}`} alt="" className="w-2/5 h-26" />
           <div className="flex flex-col justify-around">
-            <a href={link} target="_blank" rel="noreferrer">
-              <button className=" rounded-3xl border-cyan-700 text-cyan-700 font-semibold border-2 py-1 px-4 w-20">
-                Live
-              </button>
-            </a>
-            <a href={github} target="_blank" rel="noreferrer">
-              <button className="rounded-3xl border-cyan-700 text-cyan-700 font-semibold border-2 py-1 px-4 w-20">
-                Code
-              </button>
-            </a>
+            {link && (
+              <a href={link} target="_blank" rel="noreferrer">
+                <button className=" rounded-3xl border-cyan-700 text-cyan-700 font-semibold border-2 py-1 px-4 w-20">
+                  Live
+                </button>
+              </a>
+            )}
+            {github && (
+              <a href={github} target="_blank" rel="noreferrer">
+                <button className="rounded-3xl border-cyan-700 text-cyan-700 font-semibold border-2 py-1 px-4 w-20">
+                  Code
+                </button>
+              </a>
+            )}
           </div>
         </div>
         <div className="flex flex-row justify-between items-center border-b-[1px] border-gray-300">
-          <h2 className="text-2xl font-semibold pb-2">{name}</h2>
-          <span className="mr-4">{!madeAt && date}</span>
+          <div>
+            <h2 className="text-2xl font-semibold pb-2">{name}</h2>
+            {madeAt && <span className="mr-4">Made at {madeAt}</span>}
+          </div>
+          <span className="mr-4">{date}</span>
         </div>
-        <div className="flex flex-row justify-between mb-6">
-          <span className="">{madeAt && <span>Made at {madeAt}</span>}</span>
-          <span className="mr-4">{madeAt && date}</span>
-        </div>
+        <div className="flex flex-row justify-between mb-6"></div>
         <p className="mb-4">{description}</p>
         <div className="w-full border-gray-300 border-b-[1px] pb-6 mb-6">
           <p className="text-lg">Key features:</p>
@@ -46,7 +50,7 @@ const ProjectTile = ({
             </p>
           ))}
         </div>
-        <div className="grid grid-cols-4 gap-2">
+        <div className="grid md:grid-cols-4 gap-2 grid-cols-3">
           {technologies.map((tech, index) => (
             <p
               key={index}
