@@ -4,7 +4,7 @@ import { projectsData } from "../data/projectsData";
 
 const Projects = () => {
   return (
-    <div className="w-[90%] mt-8">
+    <div className="w-[90%] mt-8 mb-12">
       <SectionTitle title="PROJECTS" subtitle="TAKE A LOOK AT MY" />
       <div className="w-full grid grid-cols-1">
         {projectsData.map((project) => (
