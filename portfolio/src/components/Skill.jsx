@@ -6,7 +6,7 @@ const Skill = ({ text, colorIcon }) => {
   const imgPath = textCopy.toLowerCase();
   return (
     <div
-      className={`w-24 h-24 flex-col flex items-center justify-center border-[1px] border-gray-400 rounded-xl group hover:border-gray-800`}
+      className={`w-24 h-24 flex-col flex items-center justify-center border-[1px] border-gray-400 rounded-xl group hover:border-gray-800 dark:hover:border-gray-100`}
     >
       <ReactSVG
         src={`assets/skills/${imgPath}.svg`}
@@ -17,7 +17,8 @@ const Skill = ({ text, colorIcon }) => {
             "text-black",
             "fill-current",
             `${colorIcon}`,
-            "mb-2"
+            "mb-2",
+            "dark:text-white"
           );
         }}
         wrapper="span"

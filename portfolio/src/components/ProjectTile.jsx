@@ -19,14 +19,14 @@ const ProjectTile = ({
           <div className="flex flex-col justify-around">
             {link && (
               <a href={link} target="_blank" rel="noreferrer">
-                <button className=" rounded-3xl border-cyan-700 text-cyan-700 font-semibold border-2 py-1 px-4 w-20">
+                <button className=" rounded-3xl border-blue-700 text-blue-700 font-semibold border-2 py-1 px-4 w-20">
                   Live
                 </button>
               </a>
             )}
             {github && (
               <a href={github} target="_blank" rel="noreferrer">
-                <button className="rounded-3xl border-cyan-700 text-cyan-700 font-semibold border-2 py-1 px-4 w-20">
+                <button className="rounded-3xl border-blue-700 text-blue-700 font-semibold border-2 py-1 px-4 w-20">
                   Code
                 </button>
               </a>

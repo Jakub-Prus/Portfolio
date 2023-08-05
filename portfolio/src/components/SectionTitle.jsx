@@ -4,7 +4,7 @@ const SectionTitle = ({ title, subtitle }) => {
   return (
     <div className="w-full">
       <div className="flex flex-row items-center space-x-4 mb-4">
-        <hr className="border-t border-cyan-700 w-14" />
+        <hr className="border-t border-blue-700 w-14" />
         <span className="text-xs">{subtitle}</span>
       </div>
       <span className="text-2xl font-semibold">{title}</span>

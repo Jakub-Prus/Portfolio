@@ -6,8 +6,8 @@ import Hero from "./components/Hero";
 
 function App() {
   return (
-    <div className="w-full flex flex-col items-center justify-start overflow-x-hidden font-inter">
-      {/* <Header /> */}
+    <div className="w-full flex flex-col items-center justify-start overflow-x-hidden font-inter dark:bg-[#171c28] dark:text-white">
+      <Header />
       <Hero />
       <TechStack />
       <Projects />

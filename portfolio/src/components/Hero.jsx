@@ -16,7 +16,7 @@ const Hero = () => {
             href="resume.pdf"
             target="_blank"
             rel="noreferrer"
-            className=" bg-gray-200 font-bold rounded-3xl py-2 px-8 justify-center items-center"
+            className=" bg-gray-200 font-bold rounded-3xl py-2 px-8 justify-center items-center dark:text-black"
           >
             Resume
           </a>

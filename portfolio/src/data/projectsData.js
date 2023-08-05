@@ -47,7 +47,7 @@ export const projectsData = [
       "Express.js",
       "RESTful APIs",
     ],
-    link: "https://94.152.214.102:8094/farbki-1c079caca5834baf83a7a68335cd6d07.html",
+    link: "https://94.152.214.102:8094/farbki-039cd676465a4898aa0235b1288fff4f.html",
   },
   {
     imgName: "",
