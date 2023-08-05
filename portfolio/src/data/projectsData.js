@@ -51,6 +51,22 @@ export const projectsData = [
   },
   {
     imgName: "",
+    name: "E-statyw(e-tripod) v3.0",
+    madeAt: "Walksee",
+    description:
+      "New version of main product of walksee E-statyw, allowing to replicate the functionality of a 360-degree camera using just your phone. New version was developed to address and improve upon previous user experience issues. Using JSfeat technology, it can now detect and track feature points. It automates the process of taking photos, allowing the capture of three times as many images at a speed that's twice as fast as before. This enhancement significantly simplifies the process, ultimately making the new E-statyw even more efficient and user-friendly",
+    date: 2022,
+    features: [
+      "Automatically taken photos",
+      "JSfeat feature point tracking",
+      "360-degree image capture with a smartphone",
+      "Increased speed of operation",
+      "Enhanced user experience",
+    ],
+    technologies: ["Javascript", "Jsfeat", "WebWorkers"],
+  },
+  {
+    imgName: "",
     name: "SVM Model evaluating photo blur",
     madeAt: "Walksee",
     description: "SVM Model created for evaluating blur on each photo taken.",
