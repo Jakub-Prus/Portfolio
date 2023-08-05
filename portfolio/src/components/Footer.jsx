@@ -5,6 +5,7 @@ import Swal from "sweetalert2";
 import withReactContent from "sweetalert2-react-content";
 import SectionTitle from "./SectionTitle";
 
+
 const Footer = () => {
   const MySwal = withReactContent(Swal);
   return (
@@ -41,9 +42,14 @@ const Footer = () => {
         </a>
       </div>
       <div className="flex items-center justify-center mt-6">
-        <button className=" bg-gray-200 font-bold rounded-3xl py-2 px-8 justify-center items-center">
-          Grab a pdf of my resume
-        </button>
+        <a
+          href="resume.pdf"
+          target="_blank"
+          rel="noreferrer"
+          className=" bg-gray-200 font-bold rounded-3xl py-2 px-8 justify-center items-center"
+        >
+          See a pdf of my resume
+        </a>
       </div>
     </div>
   );

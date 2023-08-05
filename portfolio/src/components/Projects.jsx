@@ -6,7 +6,7 @@ const Projects = () => {
   return (
     <div className="w-[90%] mt-8 mb-12">
       <SectionTitle title="PROJECTS" subtitle="TAKE A LOOK AT MY" />
-      <div className="w-full grid grid-cols-1">
+      <div className="w-full grid grid-cols-1 mt-6">
         {projectsData.map((project) => (
           <ProjectTile
             key={project.name}
