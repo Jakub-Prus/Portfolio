@@ -11,7 +11,7 @@ const ThemeSwitch = () => {
     setDarkSide(checked);
   };
   return (
-    <div className="m-12 flex flex-col items-center absolute right-2 top-0">
+    <div className="m-6 flex flex-col items-center absolute right-2 top-0">
       <DarkModeSwitch checked={darkSide} onChange={toggleDarkMode} size={56} />
     </div>
   );
