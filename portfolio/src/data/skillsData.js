@@ -1,6 +1,6 @@
 export const skillsData = [
   { name: "Javascript", colorIcon: "group-hover:text-yellow-400" },
-  { name: "TypeScript", colorIcon: "group-hover:text-indigo-500" }, // Added TypeScript
+  { name: "TypeScript", colorIcon: "group-hover:text-blue-500" }, // Added TypeScript
   { name: "React", colorIcon: "group-hover:text-blue-400" },
   { name: "Redux", colorIcon: "group-hover:text-purple-400" },
   { name: "HTML5", colorIcon: "group-hover:text-red-500" },
